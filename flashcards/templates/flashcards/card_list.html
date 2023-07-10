@@ -1,0 +1,13 @@
+{% extends "flashcards/base.html" %}
+
+{% block content %}
+    <h2>
+        Cartões
+    </h2>
+    {% for card in card_list %}
+        <h3>🗃 {{ card.assunto }}</h3>
+        <article>
+            {{ card }}
+        </article>
+    {% endfor %}
+{% endblock content %}
